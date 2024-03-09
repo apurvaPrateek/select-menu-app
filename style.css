@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, blue, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 240px;
+    position: absolute;
+    top: 30%;
+}
+
+.container>div {
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#select-field {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+#select-field img {
+    height: 20px;
+    width: 20px;
+    /* position: relative;
+    top: 5px;
+    right: -40px; */
+    transition-duration: 0.5s;
+}
+
+#select-options {
+    display: none;
+}
+
+
+#select-options ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    border-bottom: 1px solid black;
+    gap: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgb(248, 207, 146);
+}
+
+li img {
+    height: 20px;
+    width: 20px;
+}
+
+#none {
+    
+    border: none;
+}
