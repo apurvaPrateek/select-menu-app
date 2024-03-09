@@ -18,7 +18,7 @@ Items.forEach((item)=>{
         fieldSelect();
         if(item.innerText == "none")
         selectField.querySelector("p") = "Select Social Media";
-        selectField.querySelector("p").innerHTML = item.innerText;
+        else selectField.querySelector("p").innerHTML = item.innerText;
 
         input.value = item.innerText;
 
